@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+body{
+   z-index: 1;
+}
 #back-to-top-btn{
     display: none;
     position: fixed;
@@ -703,15 +705,12 @@ a{
     #menu ul{
       height: 27vh;
     }
-    /* .first-img{
-      min-width: 37%;
-      margin-left: -73px;
-    } */
 }
 
 @media only screen and (max-width: 768px){
     body{
-        margin: 0;
+        /* width: 100%; */
+        overflow-x: hidden;
     }
 
     .more{
@@ -1178,6 +1177,16 @@ a{
 }
 
 @media only screen and (max-width: 280px){
+    body{
+        width: 112%;
+        overflow-x: hidden;
+    }
+    .header{
+        height: 100vh;
+    }
+    #back-to-top-btn {
+        right: 0px;
+    }
     #openmenu:checked ~ .navigation {
         transform: translateY(150px);
         height: 53vh;
@@ -1185,9 +1194,6 @@ a{
     }
     .more{
         width: 80%;
-    }
-    body{
-        width: 102%;
     }
 
     .images{
@@ -1198,5 +1204,9 @@ a{
     }
     #myself{
         max-width: 250%;
+        margin-left: 30px;
+    }
+    .third-sec-2{
+        margin-left: -30px;
     }
 }
